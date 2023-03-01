@@ -1,0 +1,1 @@
+PROJECT_DIR = 'C:/Users/iraboo/Documents/my_project/NewSeoul/'

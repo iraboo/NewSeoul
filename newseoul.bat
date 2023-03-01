@@ -1,0 +1,1 @@
+C:\users\iraboo\Anaconda3\envs\pyauto\python.exe C:\users\iraboo\documents\my_project\NewSeoul\newseoul.py
