@@ -14,10 +14,9 @@ from MyLogger import get_logger
 # 예약에 필요한 정보를 입력
 ID = '0739'
 PASSWD = 'shin00^^'
-MONTH = '2023 / 03'         # 포맷 = 'yyyy / mm' (ex) '2022 / 06'
-DATE = '23'                  # 포맷 = 'd' (ex) '8', '29'
-TIMEZONE = '07'             # 포맷 = 'hh' (ex) '07' '12'
-#ORDER = 15                 # 예약시간대에서 몇번째 예약시간을 예약할지를 입력, 0 첫번째
+MONTH = 3                   # 포맷 = 1,2, ... 11, 12
+DATE = '24'                  # 포맷 = 'd' (ex) '8', '29'
+TIMEZONE = '06'             # 포맷 = 'hh' (ex) '07' '12'
 START = '100001'            # 부킹시작 시간
 DEBUG = 1                   # if TEST, DEBUG = 1
 #############################################################################
@@ -37,14 +36,13 @@ booking.browser.find_element(By.XPATH, '//*[@id="contents"]/div/div[2]/form/div[
 # 화면상단 퀵메뉴의 실시간예약 버튼
 booking.browser.find_element(By.XPATH, '//*[@id="mainMenu"]/div[1]/a[1]').send_keys('\n') 
 
-# 실시간예약 화면에서 월 선택
-monthlist = booking.browser.find_element(By.CLASS_NAME, 'monthChoice').find_element(By.TAG_NAME, 'p')
-if monthlist.text == MONTH:
-    month_id = 'calendarBox1' 
-else:
-    month_id = 'calendarBox2'
-logger.info('예약월 = %s', MONTH)  
+# 실시간예약 화면에서 예약할 월 선택
+now = time
+m = now.localtime().tm_mon
+month_id = 'calendarBox1' if m == MONTH else 'calendarBox2'
+logger.info('캘린더 = %s, 예약월 = %s', month_id, MONTH)  
 
+# '예약가능' 이라고 표시된 날짜에만 예약가능, '잔여타임'은 안됨
 if DEBUG:   # For TEST
     datelist = booking.browser.find_element(By.ID, month_id).\
         find_element(By.TAG_NAME, 'tbody').find_elements(By.CLASS_NAME, 'possible')
@@ -71,7 +69,7 @@ for t in datelist:
 # Ex) course = [예술OUT, 예술IN, 문화OUT, 문화IN] = [y_out, y_in, m_out, m_in]
 y_out = 'cosAContainer'; y_in = 'cosBContainer'     # 예술코스
 m_out = 'cosCContainer'; m_in = 'cosDContainer'     # 문화코스
-course = [m_out, m_in, y_out, y_in]
+course = [y_out, y_in, m_out, m_in]
 breaker = 0
 for t in course:
     timelist = booking.browser.find_element(By.ID, t).find_elements(By.TAG_NAME, 'li')
@@ -103,6 +101,3 @@ else:
     #Alert(booking.browser).accept()     # 예약 확인    
     Alert(booking.browser).dismiss()    # 예약 취소
 ''' 
-
-# 텔레그램 전송기능 구현
-
