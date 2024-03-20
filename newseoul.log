@@ -168,3 +168,39 @@
 [INFO-2023-03-01 00:06:27-newseoul.py:46:<module>:예약월 = 2023 / 03
 [INFO-2023-03-01 00:07:48-newseoul.py:46:<module>:예약월 = 2023 / 03
 [INFO-2023-03-01 00:08:39-newseoul.py:92:<module>:07시 시간대 예약이 가능하지 않습니다
+[INFO-2023-03-01 21:26:10-newseoul.py:46:<module>:예약월 = 2023 / 03
+[INFO-2023-03-01 21:46:12-newseoul.py:46:<module>:예약월 = 2023 / 03
+[INFO-2023-03-01 21:46:54-newseoul.py:92:<module>:06시 시간대 예약이 가능하지 않습니다
+[INFO-2023-03-01 21:51:09-newseoul.py:46:<module>:예약월 = 2023 / 03
+[INFO-2023-03-01 21:51:10-newseoul.py:82:<module>:Java Script = doReservation(7)
+[INFO-2023-03-01 21:51:11-newseoul.py:96:<module>:06시 시간대에 예약되었습니다
+[INFO-2023-03-01 21:52:49-newseoul.py:46:<module>:예약월 = 2023 / 03
+[INFO-2023-03-01 21:57:32-newseoul.py:46:<module>:예약월 = 2023 / 03
+[INFO-2023-03-01 22:00:11-newseoul.py:46:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:04:13-newseoul.py:47:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:09:15-newseoul.py:48:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:11:18-newseoul.py:49:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:16:38-newseoul.py:49:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:18:48-newseoul.py:50:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:21:07-newseoul.py:50:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:22:12-newseoul.py:50:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:25:56-newseoul.py:50:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:28:18-newseoul.py:51:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:29:01-newseoul.py:51:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:36:00-newseoul.py:51:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:40:17-newseoul.py:51:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-01 22:50:30-newseoul.py:52:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-02 06:05:26-newseoul.py:53:<module>:캘린더 = calendarBox2, 예약월 = 2023 / 03
+[INFO-2023-03-02 06:11:13-newseoul.py:53:<module>:캘린더 = calendarBox1, 예약월 = 3
+[INFO-2023-03-02 06:14:22-newseoul.py:53:<module>:캘린더 = calendarBox1, 예약월 = 3
+[INFO-2023-03-02 06:14:22-newseoul.py:74:<module>:예약일 = 24
+[INFO-2023-03-02 06:14:32-newseoul.py:89:<module>:Java Script = doReservation(3)
+[INFO-2023-03-02 06:14:33-newseoul.py:103:<module>:06시 시간대에 예약되었습니다
+[INFO-2023-03-02 10:18:24-newseoul.py:43:<module>:캘린더 = calendarBox1, 예약월 = 3
+[INFO-2023-03-02 10:18:25-newseoul.py:63:<module>:예약일 = 24
+[INFO-2023-03-02 10:18:35-newseoul.py:78:<module>:Java Script = doReservation(3)
+[INFO-2023-03-02 10:18:36-newseoul.py:92:<module>:06시 시간대에 예약되었습니다
+[INFO-2023-03-02 10:25:49-newseoul.py:43:<module>:캘린더 = calendarBox1, 예약월 = 3
+[INFO-2023-03-02 10:25:50-newseoul.py:63:<module>:예약일 = 24
+[INFO-2023-03-02 10:25:50-newseoul.py:78:<module>:Java Script = doReservation(0)
+[INFO-2023-03-02 10:25:51-newseoul.py:92:<module>:06시 시간대에 예약되었습니다
